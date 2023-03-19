@@ -15,3 +15,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "CycleWorks OBD2"
 include ':app'
+include ':sxsobd2'
+include ':library'
+include ':plugin'

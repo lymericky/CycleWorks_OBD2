@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:orientation="vertical"
+    android:paddingVertical="2dp"
+    android:paddingHorizontal="10dp"
+    android:background="@color/black">
+
+    <com.github.anastr.speedviewlib.AwesomeSpeedometer
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:sv_backgroundCircleColor="@color/black"
+        app:sv_speedTextPosition="CENTER"
+        app:sv_textSize="8pt"
+        app:sv_speedTextSize="12pt"
+        app:sv_speedometerColor="#ffbf00"
+        app:sv_speedometerMode="NORMAL"
+        app:sv_indicatorColor="@color/red"
+        app:sv_indicator="KiteIndicator"
+        app:sv_indicatorWidth="2sp"
+        app:sv_trianglesColor="@color/green"
+        app:sv_cutPadding="15dp"
+        app:sv_withTremble="false"
+        android:padding="5dp"
+        android:background="@color/black"/>
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:text="@string/value"
+        android:textColor="@color/white"
+        android:background="@color/black"/>
+
+</LinearLayout>
